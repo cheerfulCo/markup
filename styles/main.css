@@ -1,1 +1,75 @@
 @import url(./reset.css);
+
+.body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+:root {
+  --main-bg-color: #F2F2F2;
+  --primary-black: #000000;
+  --white: #ffffff;
+  --primary-red: #DD2A00;
+  --secondary-red: #FD3000;
+  --dark-red: rgba(221, 42, 0, 1);
+  --black-gradient: linear-gradient(0deg, #DD2A00, #DD2A00), linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0%, #000000 100%);
+  --primary-gray: #747474;
+  --pink: rgba(221, 42, 0, 0.08);
+  --gray-gradient: linear-gradient(0deg, rgba(221, 42, 0, 0.08), rgba(221, 42, 0, 0.08)), linear-gradient(87.58deg, rgba(255, 255, 255, 0.4) 41.54%, rgba(255, 255, 255, 0) 66.1%);
+  --secondary-black24: rgba(43, 39, 37, 0.24);
+  --secondary-black8: rgba(0, 0, 0, 0.08);
+  --secondary-green: #62AE41;
+
+}
+
+
+.roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.roboto-flex-400 {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+
+.roboto-flex-500 {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}

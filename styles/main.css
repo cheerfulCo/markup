@@ -1,32 +1,35 @@
-@import url(./reset.css);
+@import url("./reset.css");
+@import url("./header.css");
 
 .body {
-  min-height: 100vh;
   display: grid;
+  font-size: 14px;
+  color: var(--primary-black);
+  min-height: 100vh;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
+  background-color: var(--main-bg-color);
 }
 
 :root {
   --main-bg-color: #F2F2F2;
-  --primary-black: #000000;
-  --white: #ffffff;
+  --primary-black: #000;
+  --white: #fff;
   --primary-red: #DD2A00;
   --secondary-red: #FD3000;
-  --dark-red: rgba(221, 42, 0, 1);
-  --black-gradient: linear-gradient(0deg, #DD2A00, #DD2A00), linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0%, #000000 100%);
+  --dark-red: rgb(221 42 0 / 100%);
+  --black-gradient: linear-gradient(0deg, #DD2A00, #DD2A00), linear-gradient(90deg, rgb(0 0 0 / 8%) 0%, #000 100%);
   --primary-gray: #747474;
-  --pink: rgba(221, 42, 0, 0.08);
-  --gray-gradient: linear-gradient(0deg, rgba(221, 42, 0, 0.08), rgba(221, 42, 0, 0.08)), linear-gradient(87.58deg, rgba(255, 255, 255, 0.4) 41.54%, rgba(255, 255, 255, 0) 66.1%);
-  --secondary-black24: rgba(43, 39, 37, 0.24);
-  --secondary-black8: rgba(0, 0, 0, 0.08);
+  --pink: rgb(221 42 0 / 8%);
+  --gray-gradient: linear-gradient(0deg, rgb(221 42 0 / 8%), rgb(221 42 0 / 8%)), linear-gradient(87.58deg, rgb(255 255 255 / 40%) 41.54%, rgb(255 255 255 / 0%) 66.1%);
+  --secondary-black24: rgb(43 39 37 / 24%);
+  --secondary-black8: rgb(0 0 0 / 8%);
   --secondary-green: #62AE41;
-
 }
 
 
 .roboto-400 {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -72,4 +75,16 @@
     "YTFI" 738,
     "YTLC" 514,
     "YTUC" 712;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+@media (width >= 1024px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1770px;
+  }
 }

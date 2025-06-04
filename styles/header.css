@@ -1,0 +1,349 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sales-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+  color: var(--white);
+  background-color: var(--primary-black);
+  gap: 15px;
+}
+
+.sales-banner-text {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header__top {
+  padding: 16px 0;
+  background-color: var(--white);
+}
+
+.header__top .header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top .catalog-opener,
+.header__top .search-form-opener,
+.header__top .menu-opener,
+.header__top .search-button {
+  border: none;
+  background-color: transparent;
+}
+
+.header__top .lang-switcher {
+  display: none;
+}
+
+.header__top .nav {
+  display: none;
+}
+
+.header__top .search-form {
+  display: none;
+}
+
+.header__top .search-form.active {
+  display: flex;
+  align-items: center;
+}
+
+.header__top .input-wrapper {
+  height: 100%;
+  max-width: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+
+  .search-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+  }
+
+  .search-form__input:focus-visible {
+    outline: none;
+  }
+}
+
+.header__top .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__bottom {
+  display: none;
+}
+
+@media (width >=1024px) {
+  .header__top {
+    padding: 13px 0;
+  }
+
+  .header__top .catalog-opener {
+    display: none;
+  }
+
+  .header__top .lang-switcher {
+    display: block;
+    border: none;
+  }
+
+  .header__top .ts-control {
+    position: relative;
+    font-size: 16px;
+    color: var(--primary-black);
+    border: none;
+    line-height: 18px;
+    font-family: "Roboto sans-serif";
+  }
+
+  .header__top .language-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header__top .nav {
+    display: block;
+  }
+
+  .header__top .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-width: 590px;
+  }
+
+  .header__top .nav__link {
+    padding: 8px;
+    font-size: 14px;
+    color: var(--primary-black);
+    text-decoration: none;
+    line-height: 16px;
+    border-radius: 16px;
+  }
+
+  .header__top .nav__link:hover {
+    background-color: rgb(221 42 0 / 8%);
+  }
+
+  .header__top .icons {
+    display: none;
+  }
+
+  .header__bottom {
+    display: block;
+    padding: 8px 0;
+    color: var(--white);
+    background-color: var(--primary-red);
+  }
+
+  .header__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__bottom .catalog-opener {
+    display: flex;
+    align-items: center;
+    padding: 11px 14px;
+    color: var(--white);
+    border: none;
+    background-color: var(--primary-black);
+    border-radius: 24px;
+    min-width: 230px;
+  }
+
+  .header__bottom .catalog-chevron {
+    margin-left: auto;
+    transform: rotate(90deg);
+  }
+
+  .header__bottom .call-center {
+    position: relative;
+    display: flex;
+    color: var(--white);
+    border: none;
+    background-color: transparent;
+    outline: none;
+    flex-direction: column;
+    text-align: left;
+    min-width: 200px;
+  }
+
+  .header__bottom .call-center::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-width: 0 5px 5px;
+    border-color: transparent transparent var(--white) transparent;
+    transform: rotate(180deg);
+  }
+
+  .header__bottom .call-center .phone {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .header__bottom .search-form {
+    width: 200px;
+    min-height: 100%;
+  }
+
+  .header__bottom .input-wrapper {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-color: var(--white);
+    border-radius: 24px;
+  }
+
+  .header__bottom .input-wrapper .search-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px 0 20px;
+    font-size: 14px;
+    color: var(--primary-gray);
+    border: none;
+    outline: none;
+    line-height: 18px;
+  }
+
+  .header__bottom .input-wrapper .search-form__input:focus-visible {
+    outline: none;
+  }
+
+  .header__bottom .input-wrapper .placeholder {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    left: 20px;
+    z-index: 1;
+    color: var(--primary-gray);
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .input-wrapper input:focus+.placeholder {
+    display: none;
+  }
+
+  .header__bottom .search-button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .header__bottom .account__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--white);
+    text-decoration: none;
+    line-height: 16px;
+    gap: 10px;
+    padding-right: 30px;
+  }
+
+  .header__bottom .account__link::after {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 1px;
+    height: 24px;
+    content: '';
+    background-color: rgb(255 255 255 / 24%);
+  }
+
+  .account__link .text {
+    max-width: 60px;
+  }
+
+  .header__bottom .icon-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-width: 130px;
+  }
+
+  .header__bottom .icon-list__link {
+    text-decoration: none;
+  }
+}
+
+@media (width >= 1440px) {
+  .sales-banner {
+    padding: 9px 0;
+  }
+
+  .header__top {
+    padding: 19px 0;
+  }
+
+  .header__bottom-inner {
+    padding-right: 130px;
+  }
+
+  .header__bottom .catalog-opener {
+    min-width: 330px;
+  }
+
+  .header__bottom .call-center {
+    margin-left: 30px;
+    min-width: 170px;
+  }
+
+  .header__bottom .call-center .phone {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .header__bottom .search-form {
+    width: unset;
+    flex-grow: 1;
+    margin-left: 35px;
+  }
+
+  .header__bottom .input-wrapper {
+    height: 47px;
+  }
+
+  .header__bottom .account__link {
+    margin-left: 40px;
+  }
+}

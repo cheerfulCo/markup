@@ -1,18 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
     <title>Zlato</title>
 </head>
-<body class="body">
-    <header class="header"></header>
+
+<body class="body roboto-400">
+    <header class="header">
+        <div class="sales-banner">
+            <a class="sales-banner-text">⭐ Знижка -53% на пару обручок тут</a>
+            <svg class="icon">
+                <use href="./assets/icons/icon-sprite.svg#chevron"></use>
+            </svg>
+        </div>
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <button class="catalog-opener">
+                        <svg class="icon">
+                            <use xlink:href="./assets/icons/icon-sprite.svg#icon-catalog"></use>
+                        </svg>
+                    </button>
+                    <select class="lang-switcher" name="lang-switcher" id="language-select">
+                        <option value="en" data-flag="en.jpeg">English</option>
+                        <option value="uk" data-flag="flag.jpeg">Українська</option>
+                    </select>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Про нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Доставка та оплата</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Обмін</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Точки видачі</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Допомога(FAQ)</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form class="search-form" action="">
+                        <div class="input-wrapper">
+                            <input class="search-form__input" type="text" placeholder="Наприклад кільце">
+                        </div>
+                        <button class="search-button">
+                            <svg class="icon">
+                                <use href="./assets/icons/icon-sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="icons">
+                        <button class="search-form-opener">
+                            <svg class="icon">
+                                <use href="./assets/icons/icon-sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                        <button class="menu-opener">
+                            <svg class="icon">
+                                <use href="./assets/icons/icon-sprite.svg#icon-menu"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-inner">
+                    <button class="catalog-opener">
+                        <svg class="icon" fill="white">
+                            <use href="./assets/icons/icon-sprite.svg#icon-catalog"></use>
+                        </svg>
+                        <span>Каталог товарів</span>
+                        <svg class="icon catalog-chevron">
+                            <use href="./assets/icons/icon-sprite.svg#chevron"></use>
+                        </svg>
+                    </button>
+                    <button class="call-center">
+                        <span class="phone">0800000222</span>
+                        <span class="text">Бескоштовно по Україні</span>
+                    </button>
+                    <form class="search-form">
+                        <div class="input-wrapper">
+                            <input class="search-form__input" type="text" name="search">
+                            <span class="placeholder">Наприклад кільце з діамантом</span>
+                            <button class="search-button">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <a class="account__link" href="#">
+                        <svg class="icon">
+                            <use href="./assets/icons/icon-sprite.svg#icon-profile"></use>
+                        </svg>
+                        <span class="text">Увійти в кабінет</span>
+                    </a>
+                    <ul class="icon-list">
+                        <li class="icon-list__item">
+                            <a href="#" class="icon-list__link">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-heart"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon-list__item">
+                            <a href="#" class="icon-list__link">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-view"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon-list__item">
+                            <a href="#" class="icon-list__link">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-basket"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="main"></main>
     <footer class="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
     <script type="module" src="./js/main.js"></script>
 </body>
+
 </html>

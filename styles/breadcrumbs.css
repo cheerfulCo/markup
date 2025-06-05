@@ -1,0 +1,42 @@
+.breadcumbs {
+  padding: 8px 0;
+}
+
+.breadcumbs__inner {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--primary-gray);
+  line-height: 16px;
+}
+
+.breadcumbs__link {
+  position: relative;
+  color: var(--primary-gray);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.breadcumbs__link .icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--primary-gray);
+}
+
+.breadcumbs__link::after {
+  position: absolute;
+  top: 6px;
+  right: -10px;
+  width: 5px;
+  height: 5px;
+  content: '';
+  border-top: 1px solid var(--primary-gray);
+  border-right: 1px solid var(--primary-gray);
+  transform: rotate(45deg);
+}
+
+@media (width >=1024px) {
+  .breadcumbs {
+    padding: 8px 0;
+  }
+}

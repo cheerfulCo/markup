@@ -109,6 +109,10 @@
     display: none;
   }
 
+  .catalog-opener .icon {
+    margin-right: 10px;
+  }
+
   .header__top .lang-switcher {
     display: block;
     border: none;
@@ -189,6 +193,7 @@
   .header__bottom .catalog-chevron {
     margin-left: auto;
     transform: rotate(90deg);
+    fill: var(--white);
   }
 
   .header__bottom .call-center {
@@ -277,6 +282,10 @@
     background-color: transparent;
   }
 
+  .header__bottom .search-button .icon {
+    fill: var(--primary-gray)
+  }
+
   .header__bottom .account__link {
     position: relative;
     display: flex;
@@ -287,6 +296,7 @@
     line-height: 16px;
     gap: 10px;
     padding-right: 30px;
+    fill: var(--white);
   }
 
   .header__bottom .account__link::after {
@@ -311,6 +321,7 @@
     padding: 0;
     list-style: none;
     min-width: 130px;
+    fill: var(--white)
   }
 
   .header__bottom .icon-list__link {

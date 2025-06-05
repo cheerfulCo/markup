@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12.0/dist/css/tabby-ui.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@100..900&display=swap"
         rel="stylesheet">
@@ -155,9 +157,226 @@
                 </div>
             </div>
         </div>
+        <section class="promo">
+            <div class="container">
+                <h1 class="promo__heading">Красуй це літо. зі Zlato.ua: спекотні акції вже тут ☀️</h1>
+                <div class="promo-row">
+                    <span class="promo__date promo-label">
+                        <svg class="icon">
+                            <use href="./assets/icons/icon-sprite.svg#clock"></use>
+                        </svg>
+                        <span class="text">діє до 24.12.2023</span>
+                    </span>
+                </div>
+                <div class="promo__banner">
+                    <picture>
+                        <img src="./assets/images/goods/banner.webp" alt="promo">
+                    </picture>
+                </div>
+                <ul class="promo__tabs" data-tabs>
+                    <li class="promo__tab-item">
+                        <a class="promo__tab-link" data-tabby-default href="#about-sale">Про акцію</a>
+                    </li>
+                    <li class="promo__tab-item">
+                        <a class="promo__tab-link" href="#rules-sale">Офіційні правила</a>
+                    </li>
+                </ul>
+
+                <div class="promo__tab" id="about-sale">
+                    <div class="promo__code-block">
+                        <div class="promo__code-block-wrapper">
+                            <div class="promo-row">
+                                <span class="promo__date promo-label">
+                                    <svg class="icon">
+                                        <use href="./assets/icons/icon-sprite.svg#clock"></use>
+                                    </svg>
+                                    <span class="text">діє до 24.12.2023</span>
+                                </span>
+                            </div>
+                            <p>
+                                Красуй це літо з нами: спекотні акції вже тут ☀️ З 20 червня по 31 липня 2023 активуй
+                                знижку
+                                -55% при покупці прикрас з діамантами за цим промокодом ↓
+                            </p>
+                        </div>
+                        <div class="promo__code-block-wrapper">
+                            <div class="promo__code">
+                                <span class="code" id="code">ДІАМАНТКОД55</span>
+                                <button class="code__button" id="copy-btn">
+                                    <svg class="icon">
+                                        <use href="./assets/icons/icon-sprite.svg#content_copy"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <span class="copy-code">Скопіюй промокод</span>
+                        </div>
+                    </div>
+                    <div class="rules">
+                        <div class="rules__buttons">
+                            <a href="#rules" class="rules-button active">Правила</a>
+                            <a href="#limitations" class="rules-button">Обмеження</a>
+                            <a href="#activate" class="rules-button">Як активувати промокод</a>
+                            <a href="#example" class="rules-button">Приклад розрахунку знижки</a>
+                        </div>
+                    </div>
+                    <div class="rule" id="rules">
+                        <div class="heading-row">
+                            <svg class="icon">
+                                <use href="./assets/icons/icon-sprite.svg#stars"></use>
+                            </svg>
+                            <h3 class="rule__heading" id="rules">Правила акції</h3>
+                        </div>
+                        <ul class="rule__list">
+                            <li class="rule__list-item">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                </svg>
+                                <p>Акція діє з 20.06 по 31.07.2023;</p>
+                            </li>
+                            <li class="rule__list-item">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                </svg>
+                                <p>в акції беруть участь <strong> ювелірні вироби зі вставкою
+                                        «Діамант», з основною знижкою від -49%;</strong></p>
+                            </li>
+                            <li class="rule__list-item">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                </svg>
+                                <p><strong>під терміном «активуй -55% на прикраси з
+                                        діамантами»</strong> мається на увазі заміна Основної знижки акційного товару на
+                                    Акційну знижку -55% при застосуванні промокоду «ДІАМАНТКОД55»;</p>
+                            </li>
+                            <li class="rule__list-item">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                </svg>
+                                <p><strong>для коректної роботи промокоду</strong>strong>рекомендуємо
+                                            додавати в кошик лише ті акційні вироби, що відповідають умовам цієї акції.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rule" id="limitations">
+                        <div class="heading-row">
+                            <svg class="icon">
+                                <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                            </svg>
+                            <h3 class="rule__heading" id="rules">Обмеження</h3>
+                        </div>
+                        <ul class="rule__list">
+                            <li class="rule__list-item">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                </svg>
+                                <p>В акції не беруть участь весільні обручки з діамантами та вироби з діамантами з
+                                    основною знижкою понад 54%;</p>
+                            </li>
+                            <li class="rule__list-item">
+                                <svg class="icon">
+                                    <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                </svg>
+                                <p>акція не сумісна з іншими акційними пропозиціями та додатковими знижками (3% на першу
+                                    покупку, 5% іменинникам, 200 грн за підписку).</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rule rule-activate" id="activate">
+                        <div class="heading-row">
+                            <svg class="icon">
+                                <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                            </svg>
+                            <h3 class="rule__heading" id="rules">Як активувати промокод</h3>
+                        </div>
+                        <div class="wrapper">
+                            <ul class="rule__list">
+                                <li class="rule__list-item">
+                                    <svg class="icon">
+                                        <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                    </svg>
+                                    <p>Вибери прикрасу в каталозі, відкрий її картку з детальним описом, клікни на
+                                        потрібний
+                                        розмір (для каблучок, ланцюжків та браслетів) і натисни кнопку «купити»;</p>
+                                </li>
+                                <li class="rule__list-item">
+                                    <svg class="icon">
+                                        <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                    </svg>
+                                    <p>після вибору прикраси натисни в кошику кнопку «оформити замовлення»;</p>
+                                </li>
+                                <li class="rule__list-item">
+                                    <svg class="icon">
+                                        <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                    </svg>
+                                    <p>на сторінці оформлення замовлення натисни на текстове поле «У мене є промокод»;
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="rule__image">
+                                <picture>
+                                    <img class="image" src="./assets/images/goods/steps1.webp" alt="steps">
+                                </picture>
+                            </div>
+                            <div class="rule__image">
+                                <picture>
+                                    <img class="image" src="./assets/images/goods/steps2.webp" alt="steps">
+                                </picture>
+                            </div>
+                            <ul class="rule__list rule-last">
+                                <li class="rule__list-item">
+                                    <svg class="icon">
+                                        <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                    </svg>
+                                    <p>в поле вводу впиши промокод <span class="code">«ДІАМАНТКОД55»</span> і натисни
+                                        кнопку
+                                        «застосувати»;</p>
+                                </li>
+                                <li class="rule__list-item">
+                                    <svg class="icon">
+                                        <use href="./assets/icons/icon-sprite.svg#icon-symbol"></use>
+                                    </svg>
+                                    <p>Ура! Промокод прийнятий, отже сума «До оплати» вказана вже зі знижкою за
+                                        промокодом.
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="rule__failure">
+                                        <svg class="icon">
+                                            <use href="./assets/icons/icon-sprite.svg#icon-info"></use>
+                                        </svg>
+                                        <div class="failure__text-block">
+                                            <h6 class="failure__heading">
+                                                Промокод не прийнятий?
+                                            </h6>
+                                            <p class="text">
+                                                Це означає, що обрана прикраса не відповідає умовам Акції.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rule" id="example">
+                        <div class="heading-row">
+                            <h3 class="rule__heading">Приклад розрахунку знижки</h3>
+                        </div>
+                        <div class="rule__image">
+                            <picture>
+                                <img class="image" src="./assets/images/goods/promobanner.webp" alt="promobanner">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__tab" id="rules-sale">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Deserunt esse officia voluptatem, ullam neque doloremque rerum ratione consectetur inventore
+                    doloribus libero suscipit nulla quidem sint illo vel quae illum fuga?</div>
+            </div>
+        </section>
     </main>
     <footer class="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12.0/dist/js/tabby.polyfills.min.js"></script>
     <script type="module" src="./js/main.js"></script>
 </body>
 

@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     initSearchFormOpenerListener();
     initCustomLangSwitcherSelect();
+    initPromoSaleTabs();
+    initCopyCodeListener();
+    initRulesBtnListener();
 })
 
 
@@ -44,4 +47,36 @@ function initCustomLangSwitcherSelect() {
         `
       }
     });
+}
+
+function initPromoSaleTabs() {
+  const tabs = new Tabby('[data-tabs]');
+}
+
+function initCopyCodeListener() {
+  const button = document.getElementById('copy-btn');
+  const code = document.getElementById('code').innerText;
+  const alert = document.querySelector('.copy-code');
+
+  button.addEventListener('click', async () => {
+    await navigator.clipboard.writeText(code)
+    alert.innerText = 'Код скопійовано';
+  })
+}
+
+function initRulesBtnListener() {
+  const buttonWrapper = document.querySelector('.rules__buttons');
+  const buttons = document.querySelectorAll('.rules-button')
+
+  buttonWrapper.addEventListener('click', (event) => {
+    if (event.target.classList.contains('active')) {
+      return;
+    }
+
+    buttons.forEach((button) => {
+      button.classList.remove('active');
+    })
+
+    event.target.classList.add('active');
+  })
 }

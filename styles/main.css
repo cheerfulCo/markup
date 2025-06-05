@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./breadcrumbs.css");
+@import url("./promo.css");
 
 .body {
   display: grid;

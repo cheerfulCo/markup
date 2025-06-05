@@ -11,6 +11,7 @@
 }
 
 .sales-banner {
+  z-index: 10000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +92,15 @@
 }
 
 @media (width >=1024px) {
+  .header {
+    top: -66px;
+  }
+
+  .sales-banner {
+    position: sticky;
+    top: 0;
+  }
+
   .header__top {
     padding: 13px 0;
   }
@@ -151,6 +161,8 @@
   }
 
   .header__bottom {
+    position: sticky;
+    top: 42px;
     display: block;
     padding: 8px 0;
     color: var(--white);
@@ -307,6 +319,10 @@
 }
 
 @media (width >= 1440px) {
+  .header {
+    top: -78px;
+  }
+  
   .sales-banner {
     padding: 9px 0;
   }

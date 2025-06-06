@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyCodeListener();
   initRulesBtnListener();
   initMoreGoodsSwiper();
+  initMoreSalesSwiper();
 })
 
 
@@ -92,21 +93,13 @@ function initMoreGoodsSwiper() {
     speed: 400,
     centeredSlides: true,
     loop: true,
-    slidesPerView: 2.5,
-    braakPoints: {
-      640: {
-        slidesPerView: 3.5,
-      },
-      768: {
-       slidesPerView: 5.5 
-      }
-    },
+    slidesPerView: 'auto',
     on: {
       init: function () {
-        updateCustomPagination(this);
+        updateCustomPagination(this, document.getElementById('custom-pagination'));
       },
       slideChange: function () {
-        updateCustomPagination(this);
+        updateCustomPagination(this, document.getElementById('custom-pagination'));
       }
     },
     navigation: {
@@ -116,8 +109,30 @@ function initMoreGoodsSwiper() {
   })
 }
 
-function updateCustomPagination(swiper) {
+function initMoreSalesSwiper() {
+  const swiper = new Swiper('#more-sales', {
+    spaceBetween: 10,
+    speed: 400,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    on: {
+      init: function () {
+        updateCustomPagination(this, document.getElementById('custom-pagination-sales'));
+      },
+      slideChange: function () {
+        updateCustomPagination(this, document.getElementById('custom-pagination-sales'));
+      }
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  })
+}
+
+function updateCustomPagination(swiper, pagination) {
   const current = swiper.realIndex + 1;
   const total = swiper.slides.length;
-  document.getElementById('custom-pagination').textContent = `${current} з ${total}`;
+  pagination.textContent = `${current} з ${total}`;
 }

@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.more-goods .heading-section {
+.heading-section {
   position: absolute;
   top: 20px;
 }
@@ -15,9 +15,9 @@
 .swiper-slide {
   border-radius: 16px;
   overflow: hidden;
-  max-width: 212px;
-  min-width: 212px;
+  width: auto !important;
   aspect-ratio: 1;
+  margin-right: 10px;
 }
 
 .swiper-custom-pagination {
@@ -43,6 +43,8 @@
 .more-goods__link {
   position: relative;
   text-decoration: none;
+  display: block;
+  width: 212px;
 }
 
 .more-goods__link::after {
@@ -129,14 +131,14 @@
 }
 
 @media (width >=1440px) {
- .swiper-slide {
-  max-width: 400px;
- }
- 
- .more-goods .heading-section {
+ .heading-section {
   font-size: 28px;
   line-height: 32px;
  }
+
+ .more-goods__link {
+  width: 400px;
+}
 
  .more-goods__link .card__title {
   font-size: 24px;

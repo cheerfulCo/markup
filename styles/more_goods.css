@@ -13,9 +13,9 @@
 }
 
 .swiper-slide {
+  width: auto !important;
   border-radius: 16px;
   overflow: hidden;
-  width: auto !important;
   aspect-ratio: 1;
   margin-right: 10px;
 }
@@ -42,9 +42,9 @@
 
 .more-goods__link {
   position: relative;
-  text-decoration: none;
   display: block;
   width: 212px;
+  text-decoration: none;
 }
 
 .more-goods__link::after {

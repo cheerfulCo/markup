@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initRulesBtnListener();
   initMoreGoodsSwiper();
   initMoreSalesSwiper();
+  initMobileFooter();
 })
 
 
@@ -135,4 +136,15 @@ function updateCustomPagination(swiper, pagination) {
   const current = swiper.realIndex + 1;
   const total = swiper.slides.length;
   pagination.textContent = `${current} з ${total}`;
+}
+
+function initMobileFooter() {
+  const expandableFooter = document.querySelector('.main-footer-nav-list');
+  expandableFooter.addEventListener('click', (event) => {
+    const title = event.target.closest('.navlist-group');
+    if (!title) {
+      return;
+    }
+    title.classList.toggle('active')
+  })
 }

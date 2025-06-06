@@ -4,6 +4,7 @@
 @import url("./promo.css");
 @import url("./more_goods.css");
 @import url("./more_sales.css");
+@import url("./footer.css");
 
 .body {
   display: grid;
@@ -29,6 +30,8 @@
   --secondary-black24: rgb(43 39 37 / 24%);
   --secondary-black8: rgb(0 0 0 / 8%);
   --secondary-green: #62AE41;
+  --secondary-gray: rgb(242 242 242 / 100%);
+
 }
 
 

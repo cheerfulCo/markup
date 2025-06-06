@@ -2,6 +2,7 @@
 @import url("./header.css");
 @import url("./breadcrumbs.css");
 @import url("./promo.css");
+@import url("./more_goods.css");
 
 .body {
   display: grid;

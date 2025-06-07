@@ -22,10 +22,10 @@
 }
 
 .sales-banner-link {
+  display: block;
   color: inherit;
   text-align: center;
   text-decoration: none;
-  display: block;
 }
 
 .sales-banner .icon {

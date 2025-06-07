@@ -12,8 +12,8 @@
 }
 
 .more-sales .swiper-slide {
-	aspect-ratio: unset;
 	width: auto;
+	aspect-ratio: unset;
 }
 
 .more-sales .card {

@@ -57,27 +57,27 @@
 }
 
 .promo__tabs a[role="tab"] {
+  position: relative;
+  display: block;
   margin: 0;
   padding: 0 0 15px;
   border: 0;
   background-color: transparent;
-  display: block;
-  position: relative;
 }
 
 .promo__tabs a[role="tab"]::after {
-  content: '';
-  height: 1px;
-  width: 100%;
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
   background: var(--secondary-black8);
+  content: '';
 }
 
 .promo__tabs a[role="tab"]:hover {
-  border: unset !important;
   background: transparent !important;
+  border: unset !important;
 }
 
 .promo__tabs a[role="tab"]:hover::after {
@@ -287,12 +287,13 @@
 
 @media (width >=1024px) {
   .promo {
-    padding: 35px 0 20px 0;
+    padding: 35px 0 20px;
   }
 
   .promo__heading {
     margin-bottom: 32px;
   }
+
   .promo__banner {
     margin-bottom: 50px;
   }

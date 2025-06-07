@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMoreGoodsSwiper();
   initMoreSalesSwiper();
   initMobileFooter();
+  initDiscountSwiper();
 })
 
 
@@ -146,5 +147,15 @@ function initMobileFooter() {
       return;
     }
     title.classList.toggle('active')
+  })
+}
+
+function initDiscountSwiper() {
+  const swiper = new Swiper('#products', {
+    spaceBetween: 10,
+    speed: 400,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
   })
 }

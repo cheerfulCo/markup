@@ -21,10 +21,15 @@
   gap: 15px;
 }
 
-.sales-banner-text {
+.sales-banner-link {
   color: inherit;
   text-align: center;
   text-decoration: none;
+  display: block;
+}
+
+.sales-banner .icon {
+  fill: var(--white);
 }
 
 .header__top {

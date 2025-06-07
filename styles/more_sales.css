@@ -1,5 +1,14 @@
 .more-sales {
 	position: relative;
+	padding-top: 30px;
+}
+
+.more-sales .heading-section {
+	top: 50px;
+}
+
+.more-sales .swiper.more-goods-swiper {
+	padding: 80px 16px 35px;
 }
 
 .more-sales .swiper-slide {
@@ -15,7 +24,6 @@
 
 .more-sales .card__content {
 	display: flex;
-	min-height: 136px;
 	flex-direction: column;
 }
 
@@ -46,13 +54,14 @@ linear-gradient(0deg, #FFF, #FFF);
 .more-sales .card .card__content {
 	padding: 16px;
 	background-color: var(--white);
+	min-height: 121px;
 }
 
 .more-sales .card__title {
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 600;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .more-sales .card__row {

@@ -60,6 +60,7 @@
   padding: 0 0 15px;
   border: 0;
   background-color: transparent;
+  display: block;
 }
 
 .promo__tabs [role="tab"][aria-selected="true"] {
@@ -265,6 +266,17 @@
 }
 
 @media (width >=1024px) {
+  .promo {
+    padding: 35px 0 20px 0;
+  }
+
+  .promo__heading {
+    margin-bottom: 32px;
+  }
+  .promo__banner {
+    margin-bottom: 50px;
+  }
+
   .promo__code-block {
     display: flex;
     justify-content: space-between;
@@ -286,6 +298,13 @@
 
   .rule .icon {
     display: block;
+  }
+
+  .rule__list {
+    padding-top: 40px;
+  }
+
+  .heading-row .icon {
     width: 22px;
     height: 22px;
     margin-right: 20px;
@@ -311,5 +330,48 @@
 
   .rule-last {
     margin-bottom: 0;
+  }
+}
+
+@media (width >=1440px) {
+  .promo__heading {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .promo__tab {
+    padding-top: 22px;
+  }
+
+  .promo__tabs a[role="tab"] {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .promo__code-block {
+    padding: 50px 60px 45px;
+  }
+
+  .promo__code-block p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .rule .heading-row {
+    margin-top: 25px;
+  }
+
+  .rule__heading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .rule__list {
+    padding-top: 30px;
+  }
+
+  .rule__list p {
+    font-size: 16px;
   }
 }

@@ -54,6 +54,7 @@ linear-gradient(0deg, #FFF, #FFF);
 .more-sales .card .card__content {
 	padding: 16px;
 	background-color: var(--white);
+	min-height: 121px;
 }
 
 .more-sales .card__title {
@@ -67,6 +68,7 @@ linear-gradient(0deg, #FFF, #FFF);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: auto;
 }
 
 .more-sales .card__link {

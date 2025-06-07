@@ -155,6 +155,9 @@ function initDiscountSwiper() {
     spaceBetween: 10,
     speed: 400,
     loop: true,
+    autoplay: {
+      delay: 3000
+    },
     centeredSlides: true,
     slidesPerView: 'auto',
   })

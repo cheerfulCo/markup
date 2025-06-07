@@ -48,6 +48,7 @@
 .promo__tabs {
   display: flex;
   align-items: center;
+  border: unset !important;
 }
 
 .promo__tab-item {
@@ -61,12 +62,31 @@
   border: 0;
   background-color: transparent;
   display: block;
+  position: relative;
+}
+
+.promo__tabs a[role="tab"]::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--secondary-black8);
+}
+
+.promo__tabs a[role="tab"]:hover {
+  border: unset !important;
+  background: transparent !important;
+}
+
+.promo__tabs a[role="tab"]:hover::after {
+  background-color: var(--primary-red);
 }
 
 .promo__tabs [role="tab"][aria-selected="true"] {
   color: var(--primary-black);
   font-weight: 500;
-  border-bottom: 1px solid var(--primary-red);
 }
 
 .promo__tab-link {

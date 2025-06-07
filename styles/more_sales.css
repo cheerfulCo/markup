@@ -4,6 +4,7 @@
 
 .more-sales .swiper-slide {
 	aspect-ratio: unset;
+	width: auto;
 }
 
 .more-sales .card {

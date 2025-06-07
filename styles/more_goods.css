@@ -12,8 +12,8 @@
   padding: 80px 16px 50px;
 }
 
-.swiper-slide {
-  width: auto !important;
+.more-goods .swiper-slide {
+  width: auto;
   border-radius: 16px;
   overflow: hidden;
   aspect-ratio: 1;

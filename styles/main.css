@@ -5,6 +5,7 @@
 @import url("./more_goods.css");
 @import url("./more_sales.css");
 @import url("./footer.css");
+@import url("./sales-goods.css");
 
 .body {
   display: grid;
@@ -23,7 +24,7 @@
   --primary-red: #DD2A00;
   --secondary-red: #FD3000;
   --dark-red: rgb(221 42 0 / 100%);
-  --black-gradient: linear-gradient(0deg, #DD2A00, #DD2A00), linear-gradient(90deg, rgb(0 0 0 / 8%) 0%, #000 100%);
+  --black-gradient: linear-gradient(90deg, rgb(0 0 0 / 8%) 0%, #000 100%);
   --primary-gray: #747474;
   --pink: rgb(221 42 0 / 8%);
   --gray-gradient: linear-gradient(0deg, rgb(221 42 0 / 8%), rgb(221 42 0 / 8%)), linear-gradient(87.58deg, rgb(255 255 255 / 40%) 41.54%, rgb(255 255 255 / 0%) 66.1%);
@@ -31,7 +32,7 @@
   --secondary-black8: rgb(0 0 0 / 8%);
   --secondary-green: #62AE41;
   --secondary-gray: rgb(242 242 242 / 100%);
-
+  --secondary-violet: #5D5FEF;
 }
 
 

@@ -138,6 +138,7 @@
   border: none;
   background-color: var(--primary-black);
   line-height: 1;
+  cursor: pointer;
 }
 
 .product .product__btn.left {

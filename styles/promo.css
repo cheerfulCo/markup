@@ -84,9 +84,10 @@
   background-color: var(--primary-red);
 }
 
-.promo__tabs [role="tab"][aria-selected="true"] {
+.promo__tabs [role="tab"][aria-selected="true"]::after {
   color: var(--primary-black);
   font-weight: 500;
+  background-color: var(--primary-red);
 }
 
 .promo__tab-link {

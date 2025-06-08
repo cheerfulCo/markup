@@ -67,6 +67,10 @@
   transform: translateY(-50%);
 }
 
+.product a {
+  text-decoration: none;
+}
+
 .product .product__status.available {
   color: var(--secondary-green);
 }

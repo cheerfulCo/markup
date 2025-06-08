@@ -385,4 +385,12 @@
   .header__bottom .account__link {
     margin-left: 40px;
   }
+
+  .header__bottom .search-button {
+    top: 12px;
+  }
+
+  .header__bottom .input-wrapper .placeholder {
+    top: 15px;
+  }
 }

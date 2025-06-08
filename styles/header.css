@@ -159,6 +159,7 @@
     text-decoration: none;
     line-height: 16px;
     border-radius: 16px;
+    font-family: Roboto-Flex;
   }
 
   .header__top .nav__link:hover {
@@ -202,6 +203,10 @@
     fill: var(--white);
   }
 
+  .account__link .text {
+    max-width: 60px;
+  }
+
   .header__bottom .call-center {
     position: relative;
     display: flex;
@@ -231,6 +236,10 @@
   .header__bottom .call-center .phone {
     font-size: 15px;
     font-weight: 500;
+  }
+
+  .header__bottom .call-center .text {
+    font-family: Roboto;
   }
 
   .header__bottom .search-form {
@@ -314,10 +323,6 @@
     height: 24px;
     content: '';
     background-color: rgb(255 255 255 / 24%);
-  }
-
-  .account__link .text {
-    max-width: 60px;
   }
 
   .header__bottom .icon-list {
